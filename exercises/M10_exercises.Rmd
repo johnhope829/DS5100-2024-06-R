@@ -1,0 +1,88 @@
+# M10 Exercises
+
+## Exercise 10.1
+
+```{r}
+x <- c(0,1)
+
+for (y in  2:9) {
+x <- c(x, x[y] + x[y-1])
+}
+
+x
+```
+
+## Exercise 10.2
+
+```{r}
+fibonnaci <- function(length) {
+  x <- c(0,1)
+  
+  for (y in 2:length-1) {
+    x <- c(x, x[y] + x[y-1])
+  }
+  return(x)
+}
+
+fibonnaci(15)
+```
+
+## Exercise 10.3
+
+```{r}
+between_0_and_1 <- function(x) {
+  if (0 <= x & x <= 1) {
+    return(1)
+  }
+  return(0)
+}
+
+between_0_and_1(0.4)
+between_0_and_1(2)
+```
+
+## Exercise 10.4
+
+```{r}
+nums <- c(0.2,2,0.56,1.1,1)
+for (i in 1:5){
+  print(between_0_and_1(nums[i]))
+}
+```
+## Exercise 10.5
+
+```{r}
+letters[1:10] # head(letters,10)
+tail(LETTERS,10)
+LETTERS[22:24]
+```
+
+## Exercise 10.6
+
+```{r}
+
+for(i in 1:100){
+  
+  if(i %% 3 == 0 & i %% 5 != 0) {
+    print(paste(i,"Fizz"))
+  }
+  else if(i %% 3 != 0 & i %% 5 == 0) {
+    print(paste(i,"Buzz"))
+  }
+  else if(i %% 3 == 0 & i %% 5 == 0) {
+    print(paste(i,"FizzBuzz"))
+  }
+  else {
+    print(paste(i))
+  }
+  
+}
+```
+
+## Exercise 10.7
+
+```{r}
+vec <- c(10,10,4,5,6,7,7)
+
+unique(vec)
+```
