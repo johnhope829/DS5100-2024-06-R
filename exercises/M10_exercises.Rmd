@@ -86,3 +86,44 @@ vec <- c(10,10,4,5,6,7,7)
 
 unique(vec)
 ```
+
+## Exercise 10.8
+
+```{r}
+vec <- c(1,2,5,11,16)
+
+print(paste("max:",max(vec),"min:",min(vec)))
+```
+
+## Exercise 10.9
+
+```{r}
+seq(20,50,1)
+mean(20:50)
+sum(51:91)
+```
+
+## Exercise 10.10
+
+```{r}
+df <- data.frame(
+  c = c("data","frame","r","l","a","r","a","s","l","p"),
+  f = c(1.1,2.3,3.4,4.5,5.5,6.5,7.5,8.3,9.2,10.1),
+  i = c(1:10),
+  b = c(T,F,T,F,F,F,T,F,T,F)
+)
+
+df
+```
+
+## Exercise 10.11
+
+```{r}
+airquality[c(3,5),c(1,3)]
+```
+
+## Exercise 10.12
+
+```{r}
+plot(mtcars[,c("hp","cyl","mpg")])
+```
